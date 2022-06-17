@@ -1,1 +1,1 @@
-const tab=()=>console.log('tab标签页')
+export const tab=()=>console.log('tab标签页')
