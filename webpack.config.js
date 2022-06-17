@@ -29,7 +29,10 @@ module.exports = {
             },
             {
                 test:/\.(gif|png)$/i,
-                type:'asset/resource'
+                type:'asset/resource',
+                generator:{
+                    filename:'imges/[hash:6][ext]'
+                }
                 // type:'asset/inline'
                 
             },
@@ -40,6 +43,11 @@ module.exports = {
                 generator:{
                     filename:'fonts/[hash:6][ext]'
                 }
+            },
+            {
+                test:/\.js$/i,
+                use:["babel-loader"]
+
             }
         ]
     }
