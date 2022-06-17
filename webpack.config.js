@@ -37,6 +37,14 @@ module.exports = {
                         maxSize: 21*1024
                     }
                 }
+            },
+            {
+                test:/\.(eot|svg|ttf|woff|woff2)$/i,
+                type:"asset/resource",
+                // [hash]随意生成字符  ， [ext]原文件后缀名
+                generator:{
+                    filename:'fonts/[hash:6][ext]'
+                }
             }
         ]
     }
