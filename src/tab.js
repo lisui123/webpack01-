@@ -1,0 +1,1 @@
+const tab=()=>console.log('tab标签页')
