@@ -29,14 +29,9 @@ module.exports = {
             },
             {
                 test:/\.(gif|png)$/i,
-                // type:'asset/resource'
+                type:'asset/resource'
                 // type:'asset/inline'
-                type:"asset",
-                parser:{
-                    dataUrlCondition:{
-                        maxSize: 21*1024
-                    }
-                }
+                
             },
             {
                 test:/\.(eot|svg|ttf|woff|woff2)$/i,
